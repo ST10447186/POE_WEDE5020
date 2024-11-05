@@ -26,6 +26,10 @@
     </main>
 
     <footer>
+        <footer>
+            <p>&copy; <span id="current-year"></span> GreenTech Community Hub. All rights reserved.</p>
+        </footer>
+        
         <p>&copy; 2024 GreenTech Community Hub. All rights reserved.</p>
         <p>Contact us at contact@greentechhub.org
             +27 123 4567
@@ -37,3 +41,51 @@
 <img src="images/GreenTech logo.png" alt="Panoramic view of a green cityscape representing sustainable development" />
 <meta name="description" content="GreenTech Community Hub - A platform for collaboration and innovation in sustainable technology.">
 <meta name="keywords" content="sustainability, green technology, innovation, collaboration, environmental solutions">
+
+<script src="script.js"></script>
+
+<a href="projects.html">Explore Our Projects</a>
+
+<meta property="og:title" content="GreenTech Community Hub" />
+<meta property="og:description" content="Join GreenTech Community Hub for sustainable projects and community support." />
+<meta property="og:image" content="images/community-garden.jpg" />
+<meta property="og:url" content="https://www.greentechhub.com" />
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - GreenTech Community Hub</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="validation.js" defer></script>
+</head>
+<body>
+    <header>
+        
+    </header>
+
+    <main>
+        <h1>Contact Us</h1>
+        <form action="mailto:info@greentechhub.com" method="post" id="contactForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" value="Enter your name" onclick="clearField(this)">
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" value="Enter your email" onclick="clearField(this)">
+            
+            <label for="phone">Phone:</label>
+            <input type="tel" id="phone" name="phone" value="Enter your phone number" onclick="clearField(this)">
+            
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" onclick="clearField(this)">Enter your message</textarea>
+            
+            <button type="submit" onclick="return validateForm()">Submit</button>
+        </form>
+    </main>
+
+    <footer>
+        
+    </footer>
+</body>
+</html>
